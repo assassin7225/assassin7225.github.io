@@ -2,23 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://assassin7225.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-01-14T20:10:24+08:00</lastmod>
   </url><url>
-    <loc>https://assassin7225.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-01-14T20:10:24+08:00</lastmod>
   </url><url>
-    <loc>https://assassin7225.github.io/archives/</loc>
+    <loc>http://localhost:1313/archives/</loc>
     <lastmod>2025-01-14T20:10:24+08:00</lastmod>
   </url><url>
-    <loc>https://assassin7225.github.io/categories/</loc>
+    <loc>http://localhost:1313/post/zutomayo-ainopegasus/</loc>
+    <lastmod>2025-01-13T20:57:14+08:00</lastmod>
   </url><url>
-    <loc>https://assassin7225.github.io/post/</loc>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-01-13T20:57:14+08:00</lastmod>
   </url><url>
-    <loc>https://assassin7225.github.io/search/</loc>
+    <loc>http://localhost:1313/tags/j-pop/</loc>
+    <lastmod>2025-01-13T20:57:14+08:00</lastmod>
   </url><url>
-    <loc>https://assassin7225.github.io/series/</loc>
+    <loc>http://localhost:1313/categories/live-in-japan/</loc>
+    <lastmod>2025-01-13T20:57:14+08:00</lastmod>
   </url><url>
-    <loc>https://assassin7225.github.io/tags/</loc>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2025-01-13T20:57:14+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-01-13T20:57:14+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/zutomayo/</loc>
+    <lastmod>2025-01-13T20:57:14+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/search/</loc>
+  </url><url>
+    <loc>http://localhost:1313/series/</loc>
   </url>
 </urlset>
