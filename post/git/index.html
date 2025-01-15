@@ -4,10 +4,12 @@
   lang="en"
   data-figures=""
   
+    class="page"
+  
   
   >
   <head>
-<title>Series | Solitary</title>
+<title>Git | Solitary</title>
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -20,22 +22,53 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="" />
+<meta name="description" content="算是自己用git遇到的情境跟設定紀錄" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="Series" />
+<meta name="twitter:title" content="Git" />
 <meta name="twitter:image" content="https://assassin7225.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://assassin7225.github.io/series/" />
-<meta property="og:title" content="Series" />
-<meta property="og:description" content="" />
+<meta property="og:url" content="https://assassin7225.github.io/post/git/" />
+<meta property="og:title" content="Git" />
+<meta property="og:description" content="算是自己用git遇到的情境跟設定紀錄" />
 <meta property="og:image" content="https://assassin7225.github.io/images/thumbnail.png" />
+  <meta name="keywords" content="Git" />
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage":"https:\/\/assassin7225.github.io\/post\/git\/",
+      "name": "Solitary",
+      "headline": "Git",
+      "description": "\u003cp\u003e算是自己用git遇到的情境跟設定紀錄\u003c/p\u003e",
+      "url": "https:\/\/assassin7225.github.io\/post\/git\/",
+      "datePublished": "2025-01-14T00:12:45+08:00",
+      "dateModified": "2025-01-14T00:12:45+08:00",
+      "keywords": ["Git"],
+        "articleSection": ["筆記"],
+      "author": {
+        "@type": "Person",
+        "name": "map[name:assassin7225]"
+      },
+      "image":{
+        "@type":"ImageObject",
+        "url": "https:\/\/assassin7225.github.io\/images\/thumbnail.png"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "logo": {
+          "@type":"ImageObject",
+          "url": "https:\/\/assassin7225.github.io\/"
+        },
+        "name": "Solitary"
+      }
+    }
+  </script>
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://assassin7225.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://assassin7225.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://assassin7225.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://assassin7225.github.io/series/">
-<link rel="alternate" type="application/rss+xml" href="https://assassin7225.github.io/series/index.xml" title="Solitary" />
+<link rel="canonical" href="https://assassin7225.github.io/post/git/">
 
 
 
@@ -97,23 +130,242 @@
 </header>
 
     <main>
-
-
-
+  
 <div class="grid-inverse wrap content">
-  <div>
-    <ul class="posts" id="posts">
-      <li>
-      </li>
-    </ul>
+  <article class="post_content">
+    <h1 class="post_title">Git</h1>
+  <div class="post_meta">
+    <span><svg class="icon">
+  <title>calendar</title>
+  <use xlink:href="#calendar"></use>
+</svg>
+</span>
+    <span class="post_date">
+      Jan 14, 2025</span><span>&nbsp;· <a href='https://assassin7225.github.io/tags/git/' title="Git" class="post_tag button button_translucent">Git
+        </a>
+    </span>
   </div>
+
+    <div class="post_body"><p>算是自己用git遇到的情境跟設定紀錄</p>
+<hr>
+<h2 id="remote">remote</h2>
+<p>加遠端repository</p>
+<p><code>git remote add ssh ssh://github.com/Username/repository.git</code></p>
+<p>列出遠端repository列表</p>
+<p><code>git remote -v</code></p>
+<p>更換遠端repository位子</p>
+<p><code>git remote set-url origin https://github.com/Username/repository.git</code></p>
+<p>刪除遠端repository ssh</p>
+<p><code>git remote rm ssh</code></p>
+<h2 id="ssh-key">ssh-key</h2>
+<p>懶得打密碼可以設定ssh-key讓server認得這台機器</p>
+<p>在本機打mail來gen ssh key</p>
+<p><code>ssh-keygen -t rsa -C &quot;username@.com&quot;</code></p>
+<p>然後把ssh key倒出來</p>
+<p><code>cat /home/username/.ssh/id_rsa.pub</code></p>
+<p>貼到server上的 <code>~/.ssh/authorized_keys</code></p>
+<p>把pub key貼進去存好，這樣推拉就不用打帳密了</p>
+<h2 id="commit">commit</h2>
+<h3 id="單純存到local-repository">單純存到local repository</h3>
+<p><code>git commit -m &quot;commit message&quot;</code></p>
+<h3 id="多行comment">多行comment</h3>
+<p>若有多行要加上去，就只打一個&quot;，然後開始打原本要的格式，</p>
+<p>最後一行再加上&quot;作為結尾</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s">&#34;This is line one (enter)</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="o">&gt;</span> <span class="n">and</span> <span class="n">this</span> <span class="n">is</span> <span class="n">line</span> <span class="n">two</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="o">&gt;</span> <span class="k">if</span> <span class="n">you</span> <span class="n">finish</span><span class="p">,</span> <span class="n">just</span> <span class="n">add</span> <span class="n">quote</span><span class="s">&#34;</span>
+</span></span></code></pre></div><h3 id="剛commit完還要再多加檔案上去">剛commit完還要再多加檔案上去</h3>
+<p><code>git commit --amend</code></p>
+<h3 id="單純加檔案不想改commit-message-僅適用在最新的那個commit">單純加檔案，不想改commit message (僅適用在最新的那個commit)</h3>
+<p><code>git commit --amend --no-edit</code></p>
+<h3 id="單純修改commit-message但其他檔案沒變">單純修改commit message，但其他檔案沒變</h3>
+<p><code>git commit --amend -m &quot;New comment here</code>&quot;</p>
+<h3 id="commit檔案的一部分上去慢慢編輯">commit檔案的一部分上去(慢慢編輯)</h3>
+<p><code>git add -p &lt;file&gt;</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="o">&gt;</span> <span class="o">**</span><span class="n">Staging</span> <span class="n">Patches</span><span class="o">**</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="o">&gt;</span> 
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="o">&gt;</span> <span class="err">`</span><span class="n">Stage</span> <span class="n">this</span> <span class="n">hunk</span> <span class="p">[</span><span class="n">y</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="o">/</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">J</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="o">?</span><span class="p">]</span><span class="o">?</span> <span class="o">?</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="n">y</span> <span class="o">-</span> <span class="n">stage</span> <span class="n">this</span> <span class="n">hunk</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="n">n</span> <span class="o">-</span> <span class="k">do</span> <span class="n">not</span> <span class="n">stage</span> <span class="n">this</span> <span class="n">hunk</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="n">a</span> <span class="o">-</span> <span class="n">stage</span> <span class="n">this</span> <span class="n">and</span> <span class="n">all</span> <span class="n">the</span> <span class="n">remaining</span> <span class="n">hunks</span> <span class="n">in</span> <span class="n">the</span> <span class="n">file</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="n">d</span> <span class="o">-</span> <span class="k">do</span> <span class="n">not</span> <span class="n">stage</span> <span class="n">this</span> <span class="n">hunk</span> <span class="n">nor</span> <span class="n">any</span> <span class="n">of</span> <span class="n">the</span> <span class="n">remaining</span> <span class="n">hunks</span> <span class="n">in</span> <span class="n">the</span> <span class="n">file</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="n">g</span> <span class="o">-</span> <span class="n">select</span> <span class="n">a</span> <span class="n">hunk</span> <span class="n">to</span> <span class="n">go</span> <span class="n">to</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="o">/</span> <span class="o">-</span> <span class="n">search</span> <span class="k">for</span> <span class="n">a</span> <span class="n">hunk</span> <span class="n">matching</span> <span class="n">the</span> <span class="n">given</span> <span class="n">regex</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="n">j</span> <span class="o">-</span> <span class="n">leave</span> <span class="n">this</span> <span class="n">hunk</span> <span class="n">undecided</span><span class="p">,</span> <span class="n">see</span> <span class="n">next</span> <span class="n">undecided</span> <span class="n">hunk</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="n">J</span> <span class="o">-</span> <span class="n">leave</span> <span class="n">this</span> <span class="n">hunk</span> <span class="n">undecided</span><span class="p">,</span> <span class="n">see</span> <span class="n">next</span> <span class="n">hunk</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="n">k</span> <span class="o">-</span> <span class="n">leave</span> <span class="n">this</span> <span class="n">hunk</span> <span class="n">undecided</span><span class="p">,</span> <span class="n">see</span> <span class="n">previous</span> <span class="n">undecided</span> <span class="n">hunk</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="n">K</span> <span class="o">-</span> <span class="n">leave</span> <span class="n">this</span> <span class="n">hunk</span> <span class="n">undecided</span><span class="p">,</span> <span class="n">see</span> <span class="n">previous</span> <span class="n">hunk</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="n">s</span> <span class="o">-</span> <span class="n">split</span> <span class="n">the</span> <span class="n">current</span> <span class="n">hunk</span> <span class="n">into</span> <span class="n">smaller</span> <span class="n">hunks</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="n">e</span> <span class="o">-</span> <span class="n">manually</span> <span class="n">edit</span> <span class="n">the</span> <span class="n">current</span> <span class="n">hunk</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="o">?</span> <span class="o">-</span> <span class="n">print</span> <span class="n">help</span><span class="err">`</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="o">&gt;</span> 
+</span></span></code></pre></div><h3 id="取消commit-回not-staged">取消commit (回not staged)</h3>
+<p><code>git reset HEAD &lt;file&gt;</code></p>
+<p><code>git restore --staged &lt;file&gt;</code></p>
+<h3 id="取消tracking-沒有要刪除檔案但是也不讓git追蹤">取消tracking (沒有要刪除檔案但是也不讓git追蹤)</h3>
+<p><code>git rm --cached &lt;file&gt;</code></p>
+<p>若沒下--cached的話會跟rm的效果一樣被刪掉</p>
+<h3 id="純粹留個紀錄沒有要更新檔案">純粹留個紀錄沒有要更新檔案</h3>
+<p><code>git commit --allow-empty -m &quot;this is empty commit&quot;</code></p>
+<h3 id="想改部分commit-message">想改部分commit message</h3>
+<p><code>git commit --amend</code></p>
+<p>就會跳視窗出來讓你改完再存檔即可</p>
+<h1 id="pull">pull</h1>
+<p>拉最新的下來，如果local端有比較新的東西請剪下來再貼在更新的東西之後</p>
+<p><code>git pull --rebase</code></p>
+<p>拉特定遠端repository的 branchA，或著是local某個branch需要更新遠端的branch下來</p>
+<p>remote的repository: origin</p>
+<p><code>git pull origin branchA</code></p>
+<h1 id="rebase">rebase</h1>
+<p>目前在branchA，已經有一個commit，希望把branchB的新東西加過來</p>
+<p>在branch A下</p>
+<p><code>git rebase branchB</code></p>
+<p>這樣branchB的新東西就會在branchA，而且branchA的commit會接在新東西之後</p>
+<h3 id="改變commit之間的順序">改變commit之間的順序</h3>
+<p>先找到要從哪個commit之後要移動順序</p>
+<p><code>git rebase -i bb0c9c2</code></p>
+<p>在rebase狀態看到的紀錄跟平常看的紀錄是反過來﹑越新的commit在越下面</p>
+<p>改完之後存檔就ok了 (vim <code>:m 2</code> 表示這行往下移兩行 <code>:m-2</code> 表示這行往上移一行 (自己是-1))</p>
+<h3 id="離開detached-head">離開detached HEAD</h3>
+<p>通常發生在看完git reflog再rebase飛回特定commit的時候會發生</p>
+<p>這時只要指回某個特定branch就好</p>
+<p><code>git checkout master</code></p>
+<p>如果是原本的改爛，rebase回前面的再開一個新的宇宙(誤)也會</p>
+<p>這時候幫他開一個branch給他指著即可 (可明確的點出這個branch要指向特定commit)</p>
+<p><code>git branch tmp b6d204e</code></p>
+<h2 id="push">push</h2>
+<h3 id="推特定branch到遠端">推特定branch到遠端</h3>
+<p>remote的repository: origin</p>
+<p>local端branch: 1042</p>
+<p>remote端branch: 1.0.14.1042</p>
+<p>local和remote的名字用分號隔開</p>
+<p><code>git push origin 1042:1.0.14.1042</code></p>
+<h2 id="tag">TAG</h2>
+<h3 id="單純貼tag在最新的commit上沒有說明">單純貼tag在最新的commit上，沒有說明</h3>
+<p><code>git tag testfw9142</code></p>
+<h3 id="貼tag在特定commit上">貼tag在特定commit上</h3>
+<p><code>git tag testfw9142 51d54ff</code></p>
+<h3 id="貼tag說明">貼tag+說明</h3>
+<p><code>git tag -a 9041 -m &quot;comment&quot;</code></p>
+<h3 id="列出特定tag">列出特定tag</h3>
+<p><code>git show testfw9142</code></p>
+<h3 id="列出現在所有tag">列出現在所有tag</h3>
+<p><code>git tag -l</code></p>
+<h3 id="推tag到遠端">推tag到遠端</h3>
+<p>tag名稱9041</p>
+<p><code>git push origin 9041</code></p>
+<h3 id="刪除遠端tag-aka-推一個空白的tag到remote位置">刪除遠端tag (aka 推一個空白的tag到remote位置)</h3>
+<p><code>git push origin :refs/tags/my_tag</code></p>
+<h2 id="alias">Alias</h2>
+<p>設定co 當別名</p>
+<p>git co 等同於 git checkout</p>
+<p><code>git config --global alias.co checkout</code></p>
+<h2 id="查特定作者的commit">查特定作者的commit</h2>
+<p>要查的名字沒有空白也可以不用雙引號括起來</p>
+<p><code>git log --author=&quot;hana&quot;</code></p>
+<h2 id="cherry-pick-需要先查好commit的hash值">Cherry Pick (需要先查好commit的hash值)</h2>
+<p>把別的branch的commit單獨撿過來放(可保留原作者commit的時間)</p>
+<p><code>git cherry-pick 51d54ff</code></p>
+<p>如果撿過來之後code有衝突，就先把衝突都消完再(或看git status怎麼說)</p>
+<p><code>git cherry-pick --continue</code></p>
+<h2 id="衝突發生之後用他們的-用我們的-rebasecherry-pickmerge適用">衝突發生之後用他們的 用我們的 (rebase/cherry pick/merge適用)</h2>
+<p>明確是要以對方的code為準來解conflict</p>
+<p><code>git checkout --theirs filename</code></p>
+<p>以自己為準</p>
+<p><code>git checkout --ours filename</code></p>
+<h2 id="branch">branch</h2>
+<h3 id="rename-branch">rename branch</h3>
+<p><code>git branch -m &lt;oldname-branch&gt; &lt;newname-branch&gt;</code></p>
+<p>這邊是改動local端的branch名稱</p>
+<h3 id="rename-remote-branch">rename remote branch</h3>
+<p>local端的已經改好了，再把他推到remote去，就會看到branch name已經改好了，然後commit還在</p>
+<p><code>git push origin &lt;newname-branch&gt;:&lt;oldname-branch&gt;</code></p>
+<h3 id="delete-branch">delete branch</h3>
+<p><code>git branch -d &lt;branch-name&gt;</code></p>
+<p>如果有還沒merge的修改，要強制刪掉的</p>
+<p><code>git branch -D &lt;branch-name&gt;</code></p>
+<h3 id="delete-remote-branch">delete remote branch</h3>
+<p><code>git push origin :&lt;branch-name&gt;</code></p>
+<p>換句話說，你推了一個空白的branch到遠端的branch去取代他 aka 刪掉遠端的branch</p>
+<p>(你把遠端的branch刪掉了)</p>
+<h3 id="看遠端的branch有哪些">看遠端的branch有哪些</h3>
+<p><code>git branch -r</code></p>
+<h3 id="若local端沒有存在遠端的那個branch新增一個並且切過去追蹤">若local端沒有存在遠端的那個branch，新增一個並且切過去+追蹤</h3>
+<p><code>git checkout -t origin/firmware</code></p>
+<p>或是直接省略origin，一樣也會幫你建好追蹤上游+建好branch</p>
+<p><code>git checkout firmware</code></p>
+<h2 id="squash-合併多commit">squash (合併多commit)</h2>
+<p>把多個commit合併成一個commit</p>
+<p>先rebase到要squash的前一個</p>
+<p><code>git rebase -i bb0c9c2</code></p>
+<p>接著出現的紀錄從上到下是最舊到最新 (跟git log反過來)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">pick</span> <span class="mi">382</span><span class="n">a2a5</span> <span class="n">add</span> <span class="n">database</span> <span class="n">settings</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">pick</span> <span class="n">cd82f29</span> <span class="n">add</span> <span class="n">cat</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">pick</span> <span class="mi">2</span><span class="n">bab3e7</span> <span class="n">add</span> <span class="n">dog</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="n">squash</span> <span class="mf">27f</span><span class="mi">6</span><span class="n">ed6</span> <span class="n">add</span> <span class="n">dog</span> <span class="mi">2</span>
+</span></span></code></pre></div><p>這邊add dog2會跟前面那個add dog1合併</p>
+<p>主要的commit日期跟message會以pick的那個為主</p>
+<p>被squash的會消失</p>
+<h2 id="在windows上一直有一堆stash-hard-reset-checkout都擺脫不掉的一堆檔案變更-但又沒看到什麼diff明顯的東西">在windows上一直有一堆stash hard reset checkout都擺脫不掉的一堆檔案變更 (但又沒看到什麼diff明顯的東西)</h2>
+<p>如果不是crlf搞的鬼，那就是上面列的問題</p>
+<p>主因是權限變更，導致他判斷你有更改檔案</p>
+<p><code>git config core.filemode false</code></p>
+<h2 id="在linux上一直有一堆stash-hard-reset-checkout都擺脫不掉的一堆檔案變更-但又沒看到什麼diff明顯的東西">在linux上一直有一堆stash hard reset checkout都擺脫不掉的一堆檔案變更 (但又沒看到什麼diff明顯的東西)</h2>
+<p>建議直接先留著autocrlf true</p>
+<p>先把那堆檔案add之後 commit</p>
+<p>然後繼續做自己的事情 但要記得有這個temp commit</p>
+<p>再把autocrlf false</p>
+<h2 id="設定換行符號">設定換行符號</h2>
+<ul>
+<li>git 設定檔:
+<ul>
+<li>git config --global core.autocrlf input
+<ul>
+<li>true: 表示 checkout 轉換成 CRLF，提交時轉換成 LF</li>
+<li>input: 表示 checkout 不轉換，提交時轉換成LF</li>
+<li>false: 表示不轉換</li>
+</ul>
+</li>
+<li>git config --global core.safecrlf true
+<ul>
+<li>true: 表示不允許提交時包含不同換行符號</li>
+<li>warn: 在有不同換行符號存在時警告</li>
+<li>false: 則允許提交時有不同換行符號存在</li>
+</ul>
+</li>
+<li>新增 .gitattributes
+<ul>
+<li>text eol=lf</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="clone-只載特定branch-develop">clone 只載特定branch develop</h3>
+<p><code>git clone -b develop --single-branch ssh://git@172.1.2.3/opt/share.git</code></p>
+<p><a href="https://ephrain.net/git-%E8%AE%93-git-clone-%E5%8F%AA%E8%A4%87%E8%A3%BD%E7%89%B9%E5%AE%9A%E7%9A%84%E5%88%86%E6%94%AF%E8%B3%87%E6%96%99/">[Git] 讓 git clone 只複製特定的分支資料 | EPH 的程式日記 (ephrain.net)</a></p>
+<h3 id="初始載特定branch不要master">初始載特定branch，不要master</h3>
+<p><code>git clone -b development</code></p>
+    </div>
+<div class="post_comments">
+  
+  
+  
+  
+</div>
+
+
+
+
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <br>
     
   
   <div class="search">
-    <input type="search" class="search_field form_field" placeholder='Search...' id="find" autocomplete="off" data-scope='series'>
+    <input type="search" class="search_field form_field" placeholder='Search...' id="find" autocomplete="off" data-scope='post'>
     <label for="find" class="search_label"><svg class="icon">
   <title>search</title>
   <use xlink:href="#search"></use>
@@ -176,9 +428,8 @@
   </section>
 </aside>
 
+  
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>
