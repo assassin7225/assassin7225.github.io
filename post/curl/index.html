@@ -4,10 +4,12 @@
   lang="en"
   data-figures=""
   
+    class="page"
+  
   
   >
   <head>
-<title>筆記 | Solitary</title>
+<title>Curl | Solitary</title>
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -20,22 +22,57 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="" />
+<meta name="description" content="
+不想裝postman GUI工具的時候還可以用強大的curl
+" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="筆記" />
+<meta name="twitter:title" content="Curl" />
 <meta name="twitter:image" content="https://assassin7225.github.io/images/thumbnail.png"/>
-<meta property="og:url" content="https://assassin7225.github.io/categories/%E7%AD%86%E8%A8%98/" />
-<meta property="og:title" content="筆記" />
-<meta property="og:description" content="" />
+<meta property="og:url" content="https://assassin7225.github.io/post/curl/" />
+<meta property="og:title" content="Curl" />
+<meta property="og:description" content="
+不想裝postman GUI工具的時候還可以用強大的curl
+" />
 <meta property="og:image" content="https://assassin7225.github.io/images/thumbnail.png" />
+  <meta name="keywords" content="Curl" />
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage":"https:\/\/assassin7225.github.io\/post\/curl\/",
+      "name": "Solitary",
+      "headline": "Curl",
+      "description": "\u003cblockquote\u003e\n\u003cp\u003e不想裝postman GUI工具的時候還可以用強大的curl\u003c/p\u003e\n\u003c/blockquote\u003e",
+      "url": "https:\/\/assassin7225.github.io\/post\/curl\/",
+      "datePublished": "2025-01-15T12:36:33+08:00",
+      "dateModified": "2025-01-15T12:36:33+08:00",
+      "keywords": ["Curl"],
+        "articleSection": ["筆記"],
+      "author": {
+        "@type": "Person",
+        "name": "map[name:assassin7225]"
+      },
+      "image":{
+        "@type":"ImageObject",
+        "url": "https:\/\/assassin7225.github.io\/images\/thumbnail.png"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "logo": {
+          "@type":"ImageObject",
+          "url": "https:\/\/assassin7225.github.io\/"
+        },
+        "name": "Solitary"
+      }
+    }
+  </script>
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://assassin7225.github.io/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://assassin7225.github.io/icons/favicon-32x32.png">
 <link rel="manifest" href="https://assassin7225.github.io/icons/site.webmanifest">
 
-<link rel="canonical" href="https://assassin7225.github.io/categories/%E7%AD%86%E8%A8%98/">
-<link rel="alternate" type="application/rss+xml" href="https://assassin7225.github.io/categories/%E7%AD%86%E8%A8%98/index.xml" title="Solitary" />
+<link rel="canonical" href="https://assassin7225.github.io/post/curl/">
 
 
 
@@ -97,19 +134,10 @@
 </header>
 
     <main>
-
-
-
+  
 <div class="grid-inverse wrap content">
-  <div>
-    <ul class="posts" id="posts">
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://assassin7225.github.io/post/curl/" title="Curl">Curl</a>
-      </h3>
-      
+  <article class="post_content">
+    <h1 class="post_title">Curl</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -122,64 +150,60 @@
     </span>
   </div>
 
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            <blockquote>
+    <div class="post_body"><blockquote>
 <p>不想裝postman GUI工具的時候還可以用強大的curl</p>
 </blockquote>
-          
-          <br>
-          <a href="https://assassin7225.github.io/post/curl/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
+<h2 id="whats-curl">What's curl?</h2>
+<p>在linux用http下載/上傳檔案的指令</p>
+<p>(wget只能下載)</p>
+<p>基本格式如下</p>
+<p><code>curl [options] [URL]</code></p>
+<p>response拿到的會根據URL的內容不同而不同(好像很正常)，可能是HTML/XML/JSON</p>
+<p><code>curl https://www.google.com</code></p>
+<h2 id="下載檔案">下載檔案</h2>
+<p>指定檔名為duck.jpg</p>
+<p><code>curl -o duck.jpg URL</code></p>
+<p><code>curl URL --output duck.jpg</code></p>
+<p>不改檔名直接載下來存</p>
+<p><code>curl -O URL</code></p>
+<p>下載的時候被中斷可以從中斷的地方繼續</p>
+<p><code>curl -C -O URL</code></p>
+<h2 id="轉網址">轉網址</h2>
+<p>要跟網址301/302 redirect的話用-L</p>
+<p><code>curl -L http:/google.com</code></p>
+<h2 id="http-request">HTTP request</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln">1</span><span class="cl">-X or --request [GET|POST|PUT|DELETE|PATCH] 指定http method
+</span></span><span class="line"><span class="ln">2</span><span class="cl">-H or --header 設定request帶的header
+</span></span><span class="line"><span class="ln">3</span><span class="cl">-i or --include 在output顯示response的header
+</span></span><span class="line"><span class="ln">4</span><span class="cl">-d or --data 攜帶HTTP post data
+</span></span><span class="line"><span class="ln">5</span><span class="cl">-v or --verbose 輸出更多的debug msg
+</span></span><span class="line"><span class="ln">6</span><span class="cl">-u or --user 設定使用者帳密
+</span></span><span class="line"><span class="ln">7</span><span class="cl">-b or --cookie 攜帶cookie
+</span></span></code></pre></div><p>要看詳細HEAD回傳的東西</p>
+<p>若網頁有使用Basic Authentication，可以用—user指定帳號密碼</p>
+<p><code>curl --HEAD -k --user account:password URL</code></p>
+<h2 id="reference">Reference</h2>
+<p><a href="https://blog.techbridge.cc/2019/02/01/linux-curl-command-tutorial/">https://blog.techbridge.cc/2019/02/01/linux-curl-command-tutorial/</a></p>
+<p><a href="http://www.compciv.org/recipes/cli/downloading-with-curl/">http://www.compciv.org/recipes/cli/downloading-with-curl/</a></p>
     </div>
-  </li>
+<div class="post_comments">
+  
+  
+  
+  
+</div>
 
-        <li class="post_item">
-  <div class="excerpt">
-    <div class="excerpt_header">
-      <h3 class="post_link">
-        <a href="https://assassin7225.github.io/post/git/" title="Git">Git</a>
-      </h3>
-      
-  <div class="post_meta">
-    <span><svg class="icon">
-  <title>calendar</title>
-  <use xlink:href="#calendar"></use>
-</svg>
-</span>
-    <span class="post_date">
-      Jan 14, 2025</span><span>&nbsp;· <a href='https://assassin7225.github.io/tags/git/' title="Git" class="post_tag button button_translucent">Git
-        </a>
-    </span>
-  </div>
 
-    </div>
-      <div class="excerpt_footer">
-        <div class="pale">
-          
-            算是自己用git遇到的情境跟設定紀錄
-          
-          <br>
-          <a href="https://assassin7225.github.io/post/git/" title="Read More" class="excerpt_more button">Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
 
-      <li>
-      </li>
-    </ul>
-  </div>
+
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <br>
     
   
   <div class="search">
-    <input type="search" class="search_field form_field" placeholder='Search...' id="find" autocomplete="off" data-scope='categories'>
+    <input type="search" class="search_field form_field" placeholder='Search...' id="find" autocomplete="off" data-scope='post'>
     <label for="find" class="search_label"><svg class="icon">
   <title>search</title>
   <use xlink:href="#search"></use>
@@ -268,9 +292,8 @@
   </section>
 </aside>
 
+  
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>

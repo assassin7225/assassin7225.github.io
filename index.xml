@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved</copyright>
-    <lastBuildDate>Wed, 15 Jan 2025 01:29:19 +0800</lastBuildDate><atom:link href="https://assassin7225.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Jan 2025 12:36:33 +0800</lastBuildDate><atom:link href="https://assassin7225.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Curl</title>
+      <link>https://assassin7225.github.io/post/curl/</link>
+      <pubDate>Wed, 15 Jan 2025 12:36:33 +0800</pubDate>
+      
+      <guid>https://assassin7225.github.io/post/curl/</guid>
+      <description>
+        
+          
+            &lt;blockquote&gt;
+&lt;p&gt;不想裝postman GUI工具的時候還可以用強大的curl&lt;/p&gt;
+&lt;/blockquote&gt;
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>2024.01.19 ONEREPUBLIC the Artifical Paradise Tour</title>
       <link>https://assassin7225.github.io/post/onerepublic-artificalparadise/</link>
