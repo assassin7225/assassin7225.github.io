@@ -1,5 +1,5 @@
 ---
-title: "2024.01.19 ONEREPUBLIC the Artifical Paradise Tour"
+title: "2024.01.19 ONEREPUBLIC the Artifical Paradise Tour in Kaohsiung"
 type: "post"
 date: "2025-01-15T01:29:19+08:00"
 thumbnail: "picture/OneRepublic-ArtificalParadise/thumb.jpg"

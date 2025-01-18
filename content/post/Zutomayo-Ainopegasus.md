@@ -1,5 +1,5 @@
 ---
-title: "2024.01.14 ZUTOMAYO 原始五年巡回公演「喫茶・愛のペガサス」沖繩出張所"
+title: "2024.01.14 ZUTOMAYO 原始五年巡回公演「喫茶・愛のペガサス」沖繩出張所 in Koza Music Town"
 type: "post"
 date: "2025-01-13T20:57:14+08:00"
 thumbnail: "picture/Zutomayo-Ainopegasus/thumb.jpg"
