@@ -72,6 +72,7 @@ Biri-Biri還有寶可夢布偶一起進來跳舞，新葉喵、呆火鱷、潤�
 ![](/picture/YOASOBI-AsiaTour20232024/16.jpg)
 
 勇者之後Ayase拿出大抄念中文
+
 Ayase: "我們今天來為大家表演，讓我們一起嗨到最後吧。"
 ![](/picture/YOASOBI-AsiaTour20232024/17.jpg)
 
@@ -89,7 +90,7 @@ ikura: "今天謝謝大家來我們的演唱會，和大家在一起的時間很
 ![](/picture/YOASOBI-AsiaTour20232024/21.jpg)
 ![](/picture/YOASOBI-AsiaTour20232024/22.jpg)
 
-## 今日歌單
+## 歌單
 
 1.夜に駆ける 
 

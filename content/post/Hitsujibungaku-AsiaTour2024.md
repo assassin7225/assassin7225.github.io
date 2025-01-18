@@ -6,7 +6,7 @@ thumbnail: "picture/Hitsujibungaku-AsiaTour2024/thumb.jpg"
 categories: 
   - "Live In Taiwan"
 tags:
-  - "Pop"
+  - "J-Pop"
   - "羊文學"
 ---
 
