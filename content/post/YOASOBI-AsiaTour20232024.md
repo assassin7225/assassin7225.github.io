@@ -2,7 +2,7 @@
 title: "2024.1.21 YOASOBI Asia Tour 2023-2024 Live In Taipei"
 type: "post"
 date: "2025-01-16T10:25:14+08:00"
-image: "picture/YOASOBI-AsiaTour20232024/thumb.jpg"
+thumbnail: "picture/YOASOBI-AsiaTour20232024/thumb.jpg"
 categories: 
   - "Live In Japan"
 tags:
@@ -13,7 +13,7 @@ tags:
 Summer Sonic第一次看，第二次簡單生活節，這場是第三次看。
 
 <!--more-->
-
+![](/picture/YOASOBI-AsiaTour20232024/thumb.jpg)
 ## 場地
 Zepp New Taipei (Zepp 新北)
 
