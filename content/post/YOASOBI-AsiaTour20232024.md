@@ -4,7 +4,7 @@ type: "post"
 date: "2025-01-16T10:25:14+08:00"
 thumbnail: "picture/YOASOBI-AsiaTour20232024/thumb.jpg"
 categories: 
-  - "Live In Japan"
+  - "Live In Taiwan"
 tags:
   - "J-Pop"
   - "YOASOBI"
