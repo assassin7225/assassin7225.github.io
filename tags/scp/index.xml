@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scp on Solitary</title>
+    <link>https://assassin7225.github.io/tags/scp/</link>
+    <description>Recent content in Scp on Solitary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved</copyright>
+    <lastBuildDate>Sun, 19 Jan 2025 22:50:13 +0800</lastBuildDate><atom:link href="https://assassin7225.github.io/tags/scp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SCP</title>
+      <link>https://assassin7225.github.io/post/scp/</link>
+      <pubDate>Sun, 19 Jan 2025 22:50:13 +0800</pubDate>
+      
+      <guid>https://assassin7225.github.io/post/scp/</guid>
+      <description>
+        
+          
+            &lt;p&gt;想在不同的linux主機間複製檔案，可以用scp透過SSH把local端的檔案或目錄複製到遠端去，也可以把遠端的資料複製過來。&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

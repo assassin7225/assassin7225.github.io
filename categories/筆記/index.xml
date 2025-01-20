@@ -7,7 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved</copyright>
-    <lastBuildDate>Fri, 17 Jan 2025 18:12:45 +0800</lastBuildDate><atom:link href="https://assassin7225.github.io/categories/%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Jan 2025 22:50:13 +0800</lastBuildDate><atom:link href="https://assassin7225.github.io/categories/%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SCP</title>
+      <link>https://assassin7225.github.io/post/scp/</link>
+      <pubDate>Sun, 19 Jan 2025 22:50:13 +0800</pubDate>
+      
+      <guid>https://assassin7225.github.io/post/scp/</guid>
+      <description>
+        
+          
+            &lt;p&gt;想在不同的linux主機間複製檔案，可以用scp透過SSH把local端的檔案或目錄複製到遠端去，也可以把遠端的資料複製過來。&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>bash alias</title>
       <link>https://assassin7225.github.io/post/bash-alias/</link>

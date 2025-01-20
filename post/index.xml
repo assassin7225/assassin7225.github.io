@@ -7,7 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved</copyright>
-    <lastBuildDate>Sun, 19 Jan 2025 22:50:13 +0800</lastBuildDate><atom:link href="https://assassin7225.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jan 2025 14:46:35 +0800</lastBuildDate><atom:link href="https://assassin7225.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024.04.07 King Gnu Asia Tour THE GREATEST UNKNOWN in Taipei</title>
+      <link>https://assassin7225.github.io/post/kinggnu-thegreatestunknown/</link>
+      <pubDate>Mon, 20 Jan 2025 14:46:35 +0800</pubDate>
+      
+      <guid>https://assassin7225.github.io/post/kinggnu-thegreatestunknown/</guid>
+      <description>
+        
+          
+            &lt;p&gt;King Gnu The Greatest Unknown 加場Day2&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>SCP</title>
+      <link>https://assassin7225.github.io/post/scp/</link>
+      <pubDate>Sun, 19 Jan 2025 22:50:13 +0800</pubDate>
+      
+      <guid>https://assassin7225.github.io/post/scp/</guid>
+      <description>
+        
+          
+            &lt;p&gt;想在不同的linux主機間複製檔案，可以用scp透過SSH把local端的檔案或目錄複製到遠端去，也可以把遠端的資料複製過來。&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>2024.04.04 Hitsujibungaku Asia Tour in Taipei</title>
       <link>https://assassin7225.github.io/post/hitsujibungaku-asiatour2024/</link>
