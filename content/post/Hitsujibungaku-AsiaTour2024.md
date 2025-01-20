@@ -10,6 +10,8 @@ tags:
   - "羊文學"
 ---
 
+羊文學又再次來台灣表演了！
+
 <!--more-->
 ![](/picture/Hitsujibungaku-AsiaTour2024/thumb.jpg)
 

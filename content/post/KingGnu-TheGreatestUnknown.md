@@ -62,13 +62,14 @@ MC擔當是井口理，除了一定會講的呷飽未之外還有喜歡 讚
 應該是我看過的演唱會裡面數一數二猛的，以後看演唱會要多看一個燈光師是誰🤣
 ![](/picture/KingGnu-TheGreatestUnknown/6.jpg)
 ![](/picture/KingGnu-TheGreatestUnknown/7.jpg)
+![](/picture/KingGnu-TheGreatestUnknown/8.jpg)
 
 事後King Gnu還捐了台北演唱會兩天的樂團收益給花蓮真的太有心... 
 
 他們是來台灣開大型練團室練團嗎😂😂(練團室還夭壽貴)
 
 期待下次再看他們表演
-![](/picture/KingGnu-TheGreatestUnknown/8.jpg)
+![](/picture/KingGnu-TheGreatestUnknown/9.jpg)
 
 ---
 
